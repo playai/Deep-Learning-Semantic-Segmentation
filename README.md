@@ -4,7 +4,7 @@ A paper list of semantic segmentation using deep learning.
 |network|mAP<br>(VOC12)|mAP<br>(VOC12 with COCO)|mAP<br>(Pascal Context)|mAP<br>(CamVid)|mAP<br>(Cityscapes)|mAP<br>(ADE20K)|Published In |
 |:-----:|:--------:|:------------------:|:-----------------:|:---------:|:-------------:|:---------:|:-----------:|
 |FCN-8s |62.2      |                    |37.8               |           |65.3           |           |CVPR 2015    |
-|DeepLab-MSc-CRF-LargeFOV|71.6|         |                   |           |               |           |ICLR 2015    |
+|DeepLab|71.6      |                    |                   |           |               |           |ICLR 2015    |
 |CRF-RNN|72.0      |74.7                |39.3               |           |               |           |ICCV 2015    |
 |DeconvNet|72.5    |                    |                   |           |               |           |ICCV 2015    |
 |DPN    |74.1      |77.5                |                   |           |               |           |ICCV 2015    |
