@@ -81,11 +81,12 @@ Semantic Segmentation论文整理
 37. Smoothed Dilated Convolutions for Improved Dense Prediction [[Paper]](https://arxiv.org/abs/1808.08931)
 38. [**PSANet**] [ECCV 2018] PSANet: Point-wise Spatial Attention Network for Scene Parsing [[Paper]](http://openaccess.thecvf.com/content_ECCV_2018/html/Hengshuang_Zhao_PSANet_Point-wise_Spatial_ECCV_2018_paper.html) [[project]](https://hszhao.github.io/projects/psanet/) [[code]](https://github.com/hszhao/PSANet) [[slide]](https://docs.google.com/presentation/d/1_brKNBtv8nVu_jOwFRGwVkEPAq8B8hEngBSQuZCWaZA/edit?usp=sharing) (<font color=red>Attention Mechanism</font>)
 39. [**OCNet**] OCNet: Object Context Network for Scene Parsing [[Paper]](https://arxiv.org/abs/1809.00916) [[code]](https://github.com/PkuRainBow/OCNet) (<font color=red>Attention Mechanism</font>)
-40. [**DAN**] Dual Attention Network for Scene Segmentation [[Paper]](https://arxiv.org/abs/1809.02983) [[code]](https://github.com/junfu1115/DANet) (<font color=red>Attention Mechanism</font>)
+40. [**DAN**] [CVPR 2019] Dual Attention Network for Scene Segmentation [[Paper]](https://arxiv.org/abs/1809.02983) [[code]](https://github.com/junfu1115/DANet) (<font color=red>Attention Mechanism</font>)
 41. [**CCNet**] CCNet: Criss-Cross Attention for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1811.11721) [[code]](https://github.com/speedinghzl/CCNet) (<font color=red>Attention Mechanism</font>)
 42. [**TKCN**] Tree-structured Kronecker Convolutional Networks for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1812.04945) [[code]](https://github.com/wutianyiRosun/TKCN)
 43. Auto-DeepLab: Hierarchical Neural Architecture Search for Semantic Image Segmentation[[Paper]](https://arxiv.org/abs/1901.02985)
 43. Decoders Matter for Semantic Segmentation: Data-Dependent Decoding Enables Flexible Feature Aggregation [[Paper]](https://arxiv.org/abs/1903.02120)
+44. [CVPR 2019] Structured Knowledge Distillation for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.04197)
 
 # Real-Time Semantic Segmentation
 1. [**ENet**] ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation-2016  [[Paper]](https://arxiv.org/abs/1606.02147)
