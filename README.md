@@ -87,6 +87,7 @@ Semantic Segmentation论文整理
 43. Auto-DeepLab: Hierarchical Neural Architecture Search for Semantic Image Segmentation[[Paper]](https://arxiv.org/abs/1901.02985)
 43. Decoders Matter for Semantic Segmentation: Data-Dependent Decoding Enables Flexible Feature Aggregation [[Paper]](https://arxiv.org/abs/1903.02120)
 44. [CVPR 2019] Structured Knowledge Distillation for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.04197)
+45. [CVPR 2019] Knowledge Adaptation for Efficient Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.04688)
 
 # Real-Time Semantic Segmentation
 1. [**ENet**] ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation-2016  [[Paper]](https://arxiv.org/abs/1606.02147)
