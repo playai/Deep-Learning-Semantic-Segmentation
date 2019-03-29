@@ -1,40 +1,41 @@
 # Deep-Learning-Semantic-Segmentation
 A paper list of semantic segmentation using deep learning.
 
-|network|mAP<br>(VOC12)|mAP<br>(VOC12 with COCO)|mAP<br>(Pascal Context)|mAP<br>(CamVid)|mAP<br>(Cityscapes)|mAP<br>(ADE20K)|Published In |
+|network|mAP(VOC12)|mAP(VOC12 with COCO)|mAP(Pascal Context)|mAP(CamVid)|mAP(Cityscapes)|mAP(ADE20K)|Published In |
 |:-----:|:--------:|:------------------:|:-----------------:|:---------:|:-------------:|:---------:|:-----------:|
 |FCN-8s |62.2      |                    |37.8               |           |65.3           |           |CVPR 2015    |
 |DeepLab|71.6      |                    |                   |           |               |           |ICLR 2015    |
 |CRF-RNN|72.0      |74.7                |39.3               |           |               |           |ICCV 2015    |
 |DeconvNet|72.5    |                    |                   |           |               |           |ICCV 2015    |
 |DPN    |74.1      |77.5                |                   |           |               |           |ICCV 2015    |
-|SegNet |          |||50.2|
-|Dilation8||75.3|||||
-|Deeplab v2||79.7|45.7||70.4||PAMI|
-|FRRN B |||||71.8||CVPR 2017|
-|G-FRNet|79.3|||68.0|||CVPR 2017|
-|GCN||82.2|||76.9||CVPR 2017|
-|SegModel||82.5|||79.2||CVPR 2017|
-|RefineNet||83.4|47.3||73.6|40.7|CVPR 2017|
-|PSPNet|82.6|85.4|||80.2||CVPR 2017|
-|DIS||86.8|||||ICCV 2017|
-|SAC-multiple|||||78.1|44.3|ICCV 2017|
-|DeepLabv3||85.7|||81.3||arxiv 1706.05587|
-|DUC-HDC|||||80.1||WACV2018|
-|DDSC|81.2||47.8|70.9|||CVPR 2018|
-|EncNet|82.9|85.9|51.7|||44.65|CVPR 2018|
-|DFN|82.7|86.2|||80.3||CVPR 2018|
-|DenseASPP|||||80.6||CVPR 2018|
-|UperNet||||||42.66|ECCV 2018|
-|PSANet||85.7|||80.1|43.77|ECCV 2018|
-|DeepLabv3+||87.8|||82.1||ECCV 2018|
-|ExFuse||87.9|||||ECCV 2018|
-|OCNet|||||81.2(81.7)|45.08(45.45)|arxiv 1809.00916|
-|DAN|||52.6||78.2||CVPR 2019|
-|DPC||87.9|||82.7||NIPS 2018|
-|CCNet|||||81.4|45.22|arxiv 1811.11721|
-|TKCN||83.2|||79.5||arxiv 1812.04945|
-|DUpsampling|85.3|88.1|52.5||||CVPR 2019|
+|SegNet |          |                    |                   |50.2       |
+|Dilation8|        |75.3                |                   |           |               |           |
+|Deeplab v2|       |79.7                |45.7               |           |70.4           |           |PAMI         |
+|FRRN B |          |                    |                   |           |71.8           |           |CVPR 2017    |
+|G-FRNet|79.3      |                    |                   |68.0       |               |           |CVPR 2017    |
+|GCN|              |82.2                |                   |           |76.9           |           |CVPR 2017    |
+|SegModel|         |82.5                |                   |           |79.2           |           |CVPR 2017    |
+|RefineNet|        |83.4                |47.3               |           |73.6           |40.7       |CVPR 2017    |
+|PSPNet|82.6       |85.4                |                   |           |80.2           |           |CVPR 2017    |
+|DIS|              |86.8                |                   |           |               |           |ICCV 2017    |
+|SAC-multiple|     |                    |                   |           |78.1           |44.3       |ICCV 2017    |
+|DeepLabv3|        |85.7                |                   |           |81.3           |           |arxiv 1706.05587|
+|DUC-HDC|          |                    |                   |           |80.1           |           |WACV2018|
+|DDSC|81.2         |                    |47.8               |70.9       |               |           |CVPR 2018|
+|EncNet|82.9       |85.9                |51.7               |           |               |44.65      |CVPR 2018|
+|DFN|82.7          |86.2                |                   |           |80.3           |           |CVPR 2018|
+|DenseASPP|        |                    |                   |           |80.6           |           |CVPR 2018|
+|UperNet|          |                    |                   |           |               |42.66      |ECCV 2018|
+|PSANet|           |85.7                |                   |           |80.1           |43.77      |ECCV 2018|
+|DeepLabv3+|       |87.8                |                   |           |82.1           |           |ECCV 2018|
+|ExFuse|           |87.9                |                   |           |               |           |ECCV 2018|
+|OCNet|            |                    |                   |           |81.2(81.7)     |45.08(45.45)|arxiv 1809.00916|
+|DAN|              |                    |52.6               |           |78.2           |           |CVPR 2019|
+|DPC|              |87.9                |                   |           |82.7           |           |NIPS 2018|
+|CCNet|            |                    |                   |           |81.4           |45.22      |arxiv 1811.11721|
+|TKCN|             |83.2                |                   |           |79.5           |           |arxiv 1812.04945|
+|DUpsampling|85.3  |88.1                |52.5               |           |               |           |CVPR 2019|
+|FastFCN|          |                    |53.1               |           |               |44.34      |         |
 
 Semantic Segmentation论文整理
 <!--more-->
@@ -88,6 +89,9 @@ Semantic Segmentation论文整理
 43. Decoders Matter for Semantic Segmentation: Data-Dependent Decoding Enables Flexible Feature Aggregation [[Paper]](https://arxiv.org/abs/1903.02120)
 44. [CVPR 2019] Structured Knowledge Distillation for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.04197)
 45. [CVPR 2019] Knowledge Adaptation for Efficient Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.04688)
+46. [CVPR 2019] A Cross-Season Correspondence Dataset for Robust Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.06916)
+47. Efficient Smoothing of Dilated Convolutions for Image Segmentation [[Paper]](https://arxiv.org/abs/1903.07992) [[Code]](https://github.com/ThomasZiegler/Efficient-Smoothing-of-Dilated-Convolutions)
+48. FastFCN：Rethinking Dilated Convolution in the Backbone for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.11816) [[Code]](https://github.com/wuhuikai/FastFCN)
 
 # Real-Time Semantic Segmentation
 1. [**ENet**] ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation-2016  [[Paper]](https://arxiv.org/abs/1606.02147)
@@ -103,7 +107,10 @@ Semantic Segmentation论文整理
 11. CGNet: A Light-weight Context Guided Network for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1811.08201) [[Code]](https://github.com/wutianyiRosun/CGNet) 
 12. ~~ShelfNet for Real-time Semantic Segmentation [[Paper]](https://arxiv.org/abs/1811.11254)~~
 13. ESPNetv2: A Light-weight, Power Efficient, and General Purpose Convolutional Neural Network [[Paper]](https://arxiv.org/abs/1811.11431)[[Code]](https://github.com/sacmehta/ESPNetv2) 
-14. DSNet for Real-Time Driving Scene Semantic Segmentation [[Paper]](https://arxiv.org/abs/1812.07049)
+14. Real time backbone for semantic segmentation [[Paper]](https://arxiv.org/abs/1903.06922)
+15. DSNet for Real-Time Driving Scene Semantic Segmentation [[Paper]](https://arxiv.org/abs/1812.07049)
+16. In Defense of Pre-trained ImageNet Architectures for Real-time Semantic Segmentation of Road-driving Images [[Paper]](https://arxiv.org/abs/1903.08469)
+17. Residual Pyramid Learning for Single-Shot Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.09746)
 
 # Loss Fuction
 1. <font color=red>The Lovász Hinge: A Novel Convex Surrogate for Submodular Losses</font> [[arxiv]](https://arxiv.org/abs/1512.07797) [[project]](https://sites.google.com/site/jiaqianyu08/lovaszhinge)
