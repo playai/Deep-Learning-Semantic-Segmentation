@@ -1,7 +1,7 @@
 # Deep-Learning-Semantic-Segmentation
 A paper list of semantic segmentation using deep learning.
 
-|network|mAP(VOC12)|mAP(VOC12 with COCO)|mAP(Pascal Context)|mAP(CamVid)|mAP(Cityscapes)|mAP(ADE20K)|Published In |
+|network|VOC12|VOC12 with COCO|Pascal Context|CamVid|Cityscapes|ADE20K|Published In |
 |:-----:|:--------:|:------------------:|:-----------------:|:---------:|:-------------:|:---------:|:-----------:|
 |FCN-8s |62.2      |                    |37.8               |           |65.3           |           |CVPR 2015    |
 |DeepLab|71.6      |                    |                   |           |               |           |ICLR 2015    |
