@@ -36,6 +36,7 @@ A paper list of semantic segmentation using deep learning.
 |TKCN|             |83.2                |                   |           |79.5           |           |arxiv 1812.04945|
 |DUpsampling|85.3  |88.1                |52.5               |           |               |           |CVPR 2019|
 |FastFCN|          |                    |53.1               |           |               |44.34      |         |
+|GFF|              |                    |                   |           |82.3           |45.33      |         |
 
 Semantic Segmentation论文整理
 <!--more-->
@@ -92,6 +93,8 @@ Semantic Segmentation论文整理
 46. [CVPR 2019] A Cross-Season Correspondence Dataset for Robust Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.06916)
 47. Efficient Smoothing of Dilated Convolutions for Image Segmentation [[Paper]](https://arxiv.org/abs/1903.07992) [[Code]](https://github.com/ThomasZiegler/Efficient-Smoothing-of-Dilated-Convolutions)
 48. FastFCN：Rethinking Dilated Convolution in the Backbone for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.11816) [[Code]](https://github.com/wuhuikai/FastFCN)
+49. GFF: Gated Fully Fusion for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1904.01803)
+50. DADA: Depth-aware Domain Adaptation in Semantic Segmentation [[Paper]](https://arxiv.org/abs/1904.01886)
 
 # Real-Time Semantic Segmentation
 1. [**ENet**] ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation-2016  [[Paper]](https://arxiv.org/abs/1606.02147)
@@ -111,6 +114,7 @@ Semantic Segmentation论文整理
 15. DSNet for Real-Time Driving Scene Semantic Segmentation [[Paper]](https://arxiv.org/abs/1812.07049)
 16. In Defense of Pre-trained ImageNet Architectures for Real-time Semantic Segmentation of Road-driving Images [[Paper]](https://arxiv.org/abs/1903.08469)
 17. Residual Pyramid Learning for Single-Shot Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.09746)
+18. DFANet: Deep Feature Aggregation for Real-Time Semantic Segmentation [[Paper]](https://arxiv.org/abs/1904.02216)
 
 # Loss Fuction
 1. <font color=red>The Lovász Hinge: A Novel Convex Surrogate for Submodular Losses</font> [[arxiv]](https://arxiv.org/abs/1512.07797) [[project]](https://sites.google.com/site/jiaqianyu08/lovaszhinge)
