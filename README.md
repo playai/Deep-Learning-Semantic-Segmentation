@@ -98,7 +98,7 @@ Semantic Segmentation论文整理
 - [**DAN**] [CVPR 2019] Dual Attention Network for Scene Segmentation [[Paper]](https://arxiv.org/abs/1809.02983) [[code]](https://github.com/junfu1115/DANet) (<font color=red>Attention Mechanism</font>)
 - [**CCNet**] CCNet: Criss-Cross Attention for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1811.11721) [[code]](https://github.com/speedinghzl/CCNet) (<font color=red>Attention Mechanism</font>)
 - [**GloRe**] [CVPR 2019] Graph-Based Global Reasoning Networks [[Paper]](https://arxiv.org/abs/1811.12814) (<font color=red>Graph Convolution</font>)
-- [**TKCN**] Tree-structured Kronecker Convolutional Networks for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1812.04945) [[code]](https://github.com/wutianyiRosun/TKCN)
+- [**TKCN**] Tree-structured Kronecker Convolutional Networks for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1812.04945) [[code]](https://github.com/wutianyiRosun/TKCN)  
 - [**GCU**] Beyond Grids: Learning Graph Representations for Visual Recognition [[Paper]](https://papers.nips.cc/paper/8135-beyond-grids-learning-graph-representations-for-visual-recognition) (<font color=red>Graph Convolution</font>)
 
 ## 2019
@@ -108,10 +108,10 @@ Semantic Segmentation论文整理
 - [**CVPR 2019**] Knowledge Adaptation for Efficient Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.04688)
 - [**CVPR 2019**] A Cross-Season Correspondence Dataset for Robust Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.06916)
 - Efficient Smoothing of Dilated Convolutions for Image Segmentation [[Paper]](https://arxiv.org/abs/1903.07992) [[Code]](https://github.com/ThomasZiegler/Efficient-Smoothing-of-DilaBeyond GridsBeyond GridsBeyond GridsBeyondted-Convolutions)
-- [**FastFCN**]FastFCN：Rethinking Dilated Convolution in the Backbone for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.11816) [[Code]](https://github.com/wuhuikai/FastFCN)
-- [**GFF**]GFF: Gated Fully Fusion for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1904.01803)
+- [**FastFCN**] FastFCN：Rethinking Dilated Convolution in the Backbone for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.11816) [[Code]](https://github.com/wuhuikai/FastFCN)
+- [**GFF**] GFF: Gated Fully Fusion for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1904.01803)
 - DADA: Depth-aware Domain Adaptation in Semantic Segmentation [[Paper]](https://arxiv.org/abs/1904.01886)
-- [**HRNetV2**]High-Resolution Representations for Labeling Pixels and Regions [[Paper]](https://arxiv.org/abs/1904.04514)
+- [**HRNetV2**] High-Resolution Representations for Labeling Pixels and Regions [[Paper]](https://arxiv.org/abs/1904.04514)
 
 # Real-Time Semantic Segmentation
 1. [**ENet**] ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation-2016  [[Paper]](https://arxiv.org/abs/1606.02147)
