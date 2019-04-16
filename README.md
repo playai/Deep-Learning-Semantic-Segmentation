@@ -33,10 +33,13 @@ A paper list of semantic segmentation using deep learning.
 |DAN|              |                    |52.6               |           |78.2           |           |CVPR 2019|
 |DPC|              |87.9                |                   |           |82.7           |           |NIPS 2018|
 |CCNet|            |                    |                   |           |81.4           |45.22      |arxiv 1811.11721|
-|TKCN|             |83.2                |                   |           |79.5           |           |arxiv 1812.04945|
+|GloRe|            |                    |                   |           |80.9           |           |CVPR 2019|
+|TKCN|             |83.2                |                   |           |79.5           |           |ICME 2019|
+|GCU|              |                    |                   |           |               |44.81      |NIPS 2018|
 |DUpsampling|85.3  |88.1                |52.5               |           |               |           |CVPR 2019|
-|FastFCN|          |                    |53.1               |           |               |44.34      |         |
-|GFF|              |                    |                   |           |82.3           |45.33      |         |
+|FastFCN|          |                    |53.1               |           |               |44.34      |arxiv 1903.11816|
+|GFF|              |                    |                   |           |82.3           |45.33      |arxiv 1904.01803|
+|HRNetV2|          |                    |54.0               |           |81.6           |           |arxiv 1904.04514|
 
 Semantic Segmentation论文整理
 <!--more-->
@@ -44,57 +47,71 @@ Semantic Segmentation论文整理
 
 
 # 2D Semantic Segmentation
-1. [**FCN**] Fully Convolutional Networks for Semantic Segmentation [[Paper1]](http://arxiv.org/abs/1411.4038) [[Paper2]](http://arxiv.org/abs/1605.06211) [[Slides1]](https://docs.google.com/presentation/d/1VeWFMpZ8XN7OC3URZP4WdXvOGYckoFWGVN7hApoXVnc) [[Slides2]](http://tutorial.caffe.berkeleyvision.org/caffe-cvpr15-pixels.pdf)
-2. [**DeepLab v1**] Semantic Image Segmentation With Deep Convolutional Nets and Fully Connected CRFs[[Code-Caffe]](https://bitbucket.org/deeplab/deeplab-public/) [[Paper]](http://arxiv.org/abs/1412.7062)
-3. [**CRF as RNN**] Conditional Random Fields as Recurrent Neural Networks [[Project]](http://www.robots.ox.ac.uk/~szheng/CRFasRNN.html) [[Demo]](http://www.robots.ox.ac.uk/~szheng/crfasrnndemo) [[Paper]](http://arxiv.org/abs/1502.03240)
-4. [**DeconvNet**] Learning Deconvolution Network for Semantic Segmentation [[Project]](http://cvlab.postech.ac.kr/research/deconvnet/) [[Paper]](http://arxiv.org/abs/1505.04366) [[Slides]](http://web.cs.hacettepe.edu.tr/~aykut/classes/spring2016/bil722/slides/w06-deconvnet.pdf)
-5. [**U-Net**] U-Net: Convolutional Networks for Biomedical Image Segmentation [[Project]](http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) [[Paper]](http://arxiv.org/abs/1505.04597)
-6. [**SegNet**] SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation [[Project]](http://mi.eng.cam.ac.uk/projects/segnet/) [[Paper]](http://arxiv.org/abs/1511.00561) [[Tutorial1]](http://mi.eng.cam.ac.uk/projects/segnet/tutorial.html) [[Tutorial2]](https://github.com/alexgkendall/SegNet-Tutorial)
-7. Multi-scale context aggregation by dilated convolutions [[Paper]](https://arxiv.org/pdf/1511.07122.pdf)
-8. [**DeepLab v2**] DeepLab v2:Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs** [[Project]](http://liangchiehchen.com/projects/DeepLab.html) [[Code-Caffe]](https://bitbucket.org/deeplab/deeplab-public/) [[Paper]](https://arxiv.org/abs/1606.00915)
-9. [**RefineNet**] [CVPR2017] RefineNet: Multi-Path Refinement Networks for High-Resolution Semantic Segmentation [[Code-MatConvNet]](https://github.com/guosheng/refinenet) [[Paper]](https://arxiv.org/abs/1611.06612)
-10. [**IFCN**] Improving Fully Convolution Network for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1611.08986)
-11. [**FC-DenseNet**] [CVPRW2017] The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation [[Code-Theano]](https://github.com/SimJeg/FC-DenseNet) [[Code-Keras1]](https://github.com/titu1994/Fully-Connected-DenseNets-Semantic-Segmentation) [[Code-Keras2]](https://github.com/0bserver07/One-Hundred-Layers-Tiramisu) [[Paper]](https://arxiv.org/abs/1611.09326)
-12. [**PSPNet**] [CVPR2017] Pyramid Scene Parsing Network [[Project]](https://hszhao.github.io/projects/pspnet/) [[Code-Caffe]](https://github.com/hszhao/PSPNet) [[Paper]](https://arxiv.org/abs/1612.01105) [[Slides]](http://image-net.org/challenges/talks/2016/SenseCUSceneParsing.pdf)
-13. [**FusionNet**] FusionNet: A deep fully residual convolutional neural network for image segmentation in connectomics [[Code-PyTorch]](https://github.com/GunhoChoi/FusionNet_Pytorch) [[Paper]](https://arxiv.org/abs/1612.05360)
-14. [**PixelNet**] PixelNet: Representation of the pixels, by the pixels, and for the pixels [[Project]](http://www.cs.cmu.edu/~aayushb/pixelNet/) [[Code-Caffe]](https://github.com/aayushbansal/PixelNet) [[Paper]](https://arxiv.org/abs/1702.06506)
-15. [**DUC-HDC**] [WACV 2018]Understanding Convolution for Semantic Segmentation [[Model-Mxnet]](https://drive.google.com/drive/folders/0B72xLTlRb0SoREhISlhibFZTRmM) [[Paper]](https://arxiv.org/abs/1702.08502) [[Code]](https://github.com/TuSimple/TuSimple-DUC)
-16. [**GCN**] [CVPR2017] Large Kernel Matters - Improve Semantic Segmentation by Global Convolutional Network [[Paper]](https://arxiv.org/abs/1703.02719)
-17. [CVPR 2017] Not All Pixels Are Equal: Difficulty-Aware Semantic Segmentation via Deep Layer Cascade-2017 [[Paper]](https://arxiv.org/abs/1704.01344)
-18. Pixel Deconvolutional Networks-2017 [[Code-Tensorflow]](https://github.com/HongyangGao/PixelDCN) [[Paper]](https://arxiv.org/abs/1705.06820)
-19. [**DRN**] [CVPR 2017] Dilated Residual Networks [[Paper]](https://arxiv.org/abs/1705.09914) [[Code]](https://github.com/fyu/drn)
-20. [**Deeplab v3**] Deeplab v3: Rethinking Atrous Convolution for Semantic Image Segmentation [[Paper]](https://arxiv.org/abs/1706.05587)
-21. [**LinkNet**] LinkNet: Exploiting Encoder Representations for Efficient Semantic Segmentation [[Paper]](https://arxiv.org/abs/1707.03718)
-22. [**SDN**] Stacked Deconvolutional Network for Semantic Segmentation [[Paper]](https://arxiv.org/pdf/1708.04943.pdf)
-23. Learning to Segment Every Thing [[Paper]](https://arxiv.org/pdf/1711.10370.pdf)
-24. Panoptic Segmentation [[Paper]](https://arxiv.org/pdf/1801.00868.pdf)
-25. [**DeepLabv3+**] [ECCV 2018] Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation [[Paper]](https://arxiv.org/pdf/1802.02611.pdf) [[Code]](https://github.com/tensorflow/models/tree/master/research/deeplab)
-26. [**EncNet**] [CVPR 2018] Context Encoding for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1803.08904) [[Code]](https://github.com/zhanghang1989/PyTorch-Encoding) (**Leverages global context to increase accuracy by adding a channel attention module, which triggers attention on certain feature maps based on a newly designed loss function. The loss is based on a network branch which predicts which classes are present in the image (i.e higher level global context)**)
-27. [ECCV 2018] Adaptive Affinity Fields for Semantic Segmentation [[Project]](https://jyhjinghwang.github.io/projects/aaf.html) [[Paper]](https://arxiv.org/abs/1803.10335) [[Code]](https://github.com/twke18/Adaptive_Affinity_Fields)
-28. [**EXFuse**] [ECCV 2018] ExFuse: Enhancing Feature Fusion for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1804.03821) (**Uses deep supervision and explicitly combines the multi-scale features from the feature extraction frontend before processing, in order to ensure multi-scale information is processed together at all levels**)
-29. Vortex Pooling: Improving Context Representation in Semantic Segmentation [[Paper]](https://arxiv.org/abs/1804.06242)
-30. [**DFN**] [CVPR 2018] Learning a Discriminative Feature Network for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1804.09337) (**Uses deep supervision and attempts to process the smooth and edge portions of the segments separately**)
-31. Stacked U-Nets: A No-Frills Approach to Natural Image Segmentation [[Paper]](https://arxiv.org/abs/1804.10343)
-32. [BMVC 2018] Pyramid Attention Network for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1805.10180)
-33. [**G-FRNet**] [CVPR 2017] Gated Feedback Refinement Network for Coarse-to-Fine Dense Semantic Image Labeling [[Paper]](https://arxiv.org/abs/1806.11266) [[code]](https://github.com/mrochan/gfrnet)
-34. [CVPR 2018] Context Contrasted Feature and Gated Multi-Scale Aggregation for Scene Segmentation [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/html/Ding_Context_Contrasted_Feature_CVPR_2018_paper.html)
-35. [**DenseASPP**] [CVPR 2018] DenseASPP for Semantic Segmentation in Street Scenes [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_DenseASPP_for_Semantic_CVPR_2018_paper.html) [[code]](https://github.com/DeepMotionAIResearch/DenseASPP) (**Combines dense connections with atrous convolutions**)
-36. [CVPR 2018] Dense Decoder Shortcut Connections for Single-Pass Semantic Segmentation [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/html/Bilinski_Dense_Decoder_Shortcut_CVPR_2018_paper.html) (**Use dense connections in the decoding stage for higher accuracy (previously only done during feature extraction / encoding)**)
-37. Smoothed Dilated Convolutions for Improved Dense Prediction [[Paper]](https://arxiv.org/abs/1808.08931)
-38. [**PSANet**] [ECCV 2018] PSANet: Point-wise Spatial Attention Network for Scene Parsing [[Paper]](http://openaccess.thecvf.com/content_ECCV_2018/html/Hengshuang_Zhao_PSANet_Point-wise_Spatial_ECCV_2018_paper.html) [[project]](https://hszhao.github.io/projects/psanet/) [[code]](https://github.com/hszhao/PSANet) [[slide]](https://docs.google.com/presentation/d/1_brKNBtv8nVu_jOwFRGwVkEPAq8B8hEngBSQuZCWaZA/edit?usp=sharing) (<font color=red>Attention Mechanism</font>)
-39. [**OCNet**] OCNet: Object Context Network for Scene Parsing [[Paper]](https://arxiv.org/abs/1809.00916) [[code]](https://github.com/PkuRainBow/OCNet) (<font color=red>Attention Mechanism</font>)
-40. [**DAN**] [CVPR 2019] Dual Attention Network for Scene Segmentation [[Paper]](https://arxiv.org/abs/1809.02983) [[code]](https://github.com/junfu1115/DANet) (<font color=red>Attention Mechanism</font>)
-41. [**CCNet**] CCNet: Criss-Cross Attention for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1811.11721) [[code]](https://github.com/speedinghzl/CCNet) (<font color=red>Attention Mechanism</font>)
-42. [**TKCN**] Tree-structured Kronecker Convolutional Networks for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1812.04945) [[code]](https://github.com/wutianyiRosun/TKCN)
-43. Auto-DeepLab: Hierarchical Neural Architecture Search for Semantic Image Segmentation[[Paper]](https://arxiv.org/abs/1901.02985)
-43. Decoders Matter for Semantic Segmentation: Data-Dependent Decoding Enables Flexible Feature Aggregation [[Paper]](https://arxiv.org/abs/1903.02120)
-44. [CVPR 2019] Structured Knowledge Distillation for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.04197)
-45. [CVPR 2019] Knowledge Adaptation for Efficient Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.04688)
-46. [CVPR 2019] A Cross-Season Correspondence Dataset for Robust Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.06916)
-47. Efficient Smoothing of Dilated Convolutions for Image Segmentation [[Paper]](https://arxiv.org/abs/1903.07992) [[Code]](https://github.com/ThomasZiegler/Efficient-Smoothing-of-Dilated-Convolutions)
-48. FastFCN：Rethinking Dilated Convolution in the Backbone for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.11816) [[Code]](https://github.com/wuhuikai/FastFCN)
-49. GFF: Gated Fully Fusion for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1904.01803)
-50. DADA: Depth-aware Domain Adaptation in Semantic Segmentation [[Paper]](https://arxiv.org/abs/1904.01886)
+## 2014
+- [**FCN**] Fully Convolutional Networks for Semantic Segmentation [[Paper1]](http://arxiv.org/abs/1411.4038) [[Paper2]](http://arxiv.org/abs/1605.06211) [[Slides1]](https://docs.google.com/presentation/d/1VeWFMpZ8XN7OC3URZP4WdXvOGYckoFWGVN7hApoXVnc) [[Slides2]](http://tutorial.caffe.berkeleyvision.org/caffe-cvpr15-pixels.pdf)
+- [**DeepLab v1**] Semantic Image Segmentation With Deep Convolutional Nets and Fully Connected CRFs[[Code-Caffe]](https://bitbucket.org/deeplab/deeplab-public/) [[Paper]](http://arxiv.org/abs/1412.7062)
+
+## 2015
+- [**CRF as RNN**] Conditional Random Fields as Recurrent Neural Networks [[Project]](http://www.robots.ox.ac.uk/~szheng/CRFasRNN.html) [[Demo]](http://www.robots.ox.ac.uk/~szheng/crfasrnndemo) [[Paper]](http://arxiv.org/abs/1502.03240)
+- [**DeconvNet**] Learning Deconvolution Network for Semantic Segmentation [[Project]](http://cvlab.postech.ac.kr/research/deconvnet/) [[Paper]](http://arxiv.org/abs/1505.04366) [[Slides]](http://web.cs.hacettepe.edu.tr/~aykut/classes/spring2016/bil722/slides/w06-deconvnet.pdf)
+- [**U-Net**] U-Net: Convolutional Networks for Biomedical Image Segmentation [[Project]](http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) [[Paper]](http://arxiv.org/abs/1505.04597)
+- [**SegNet**] SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation [[Project]](http://mi.eng.cam.ac.uk/projects/segnet/) [[Paper]](http://arxiv.org/abs/1511.00561) [[Tutorial1]](http://mi.eng.cam.ac.uk/projects/segnet/tutorial.html) [[Tutorial2]](https://github.com/alexgkendall/SegNet-Tutorial)
+- Multi-scale context aggregation by dilated convolutions [[Paper]](https://arxiv.org/pdf/1511.07122.pdf)
+
+## 2016
+- [**DeepLab v2**] DeepLab v2:Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs** [[Project]](http://liangchiehchen.com/projects/DeepLab.html) [[Code-Caffe]](https://bitbucket.org/deeplab/deeplab-public/) [[Paper]](https://arxiv.org/abs/1606.00915)
+- [**RefineNet**] [CVPR2017] RefineNet: Multi-Path Refinement Networks for High-Resolution Semantic Segmentation [[Code-MatConvNet]](https://github.com/guosheng/refinenet) [[Paper]](https://arxiv.org/abs/1611.06612)
+- [**IFCN**] Improving Fully Convolution Network for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1611.08986)
+- [**FC-DenseNet**] [CVPRW2017] The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation [[Code-Theano]](https://github.com/SimJeg/FC-DenseNet) [[Code-Keras1]](https://github.com/titu1994/Fully-Connected-DenseNets-Semantic-Segmentation) [[Code-Keras2]](https://github.com/0bserver07/One-Hundred-Layers-Tiramisu) [[Paper]](https://arxiv.org/abs/1611.09326)
+- [**PSPNet**] [CVPR2017] Pyramid Scene Parsing Network [[Project]](https://hszhao.github.io/projects/pspnet/) [[Code-Caffe]](https://github.com/hszhao/PSPNet) [[Paper]](https://arxiv.org/abs/1612.01105) [[Slides]](http://image-net.org/challenges/talks/2016/SenseCUSceneParsing.pdf)
+- [**FusionNet**] FusionNet: A deep fully residual convolutional neural network for image segmentation in connectomics [[Code-PyTorch]](https://github.com/GunhoChoi/FusionNet_Pytorch) [[Paper]](https://arxiv.org/abs/1612.05360)
+
+## 2017
+- [**PixelNet**] PixelNet: Representation of the pixels, by the pixels, and for the pixels [[Project]](http://www.cs.cmu.edu/~aayushb/pixelNet/) [[Code-Caffe]](https://github.com/aayushbansal/PixelNet) [[Paper]](https://arxiv.org/abs/1702.06506)
+- [**DUC-HDC**] [WACV 2018]Understanding Convolution for Semantic Segmentation [[Model-Mxnet]](https://drive.google.com/drive/folders/0B72xLTlRb0SoREhISlhibFZTRmM) [[Paper]](https://arxiv.org/abs/1702.08502) [[Code]](https://github.com/TuSimple/TuSimple-DUC)
+- [**GCN**] [CVPR2017] Large Kernel Matters - Improve Semantic Segmentation by Global Convolutional Network [[Paper]](https://arxiv.org/abs/1703.02719)
+- [CVPR 2017] Not All Pixels Are Equal: Difficulty-Aware Semantic Segmentation via Deep Layer Cascade-2017 [[Paper]](https://arxiv.org/abs/1704.01344)
+- Pixel Deconvolutional Networks-2017 [[Code-Tensorflow]](https://github.com/HongyangGao/PixelDCN) [[Paper]](https://arxiv.org/abs/1705.06820)
+- [**DRN**] [CVPR 2017] Dilated Residual Networks [[Paper]](https://arxiv.org/abs/1705.09914) [[Code]](https://github.com/fyu/drn)
+- [**Deeplab v3**] Deeplab v3: Rethinking Atrous Convolution for Semantic Image Segmentation [[Paper]](https://arxiv.org/abs/1706.05587)
+- [**LinkNet**] LinkNet: Exploiting Encoder Representations for Efficient Semantic Segmentation [[Paper]](https://arxiv.org/abs/1707.03718)
+- [**SDN**] Stacked Deconvolutional Network for Semantic Segmentation [[Paper]](https://arxiv.org/pdf/1708.04943.pdf)
+- Learning to Segment Every Thing [[Paper]](https://arxiv.org/pdf/1711.10370.pdf)
+
+## 2018
+- Panoptic Segmentation [[Paper]](https://arxiv.org/pdf/1801.00868.pdf)
+- [**DeepLabv3+**] [ECCV 2018] Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation [[Paper]](https://arxiv.org/pdf/1802.02611.pdf) [[Code]](https://github.com/tensorflow/models/tree/master/research/deeplab)
+- [**EncNet**] [CVPR 2018] Context Encoding for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1803.08904) [[Code]](https://github.com/zhanghang1989/PyTorch-Encoding) (**Leverages global context to increase accuracy by adding a channel attention module, which triggers attention on certain feature maps based on a newly designed loss function. The loss is based on a network branch which predicts which classes are present in the image (i.e higher level global context)**)
+- [ECCV 2018] Adaptive Affinity Fields for Semantic Segmentation [[Project]](https://jyhjinghwang.github.io/projects/aaf.html) [[Paper]](https://arxiv.org/abs/1803.10335) [[Code]](https://github.com/twke18/Adaptive_Affinity_Fields)
+- [**EXFuse**] [ECCV 2018] ExFuse: Enhancing Feature Fusion for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1804.03821) (**Uses deep supervision and explicitly combines the multi-scale features from the feature extraction frontend before processing, in order to ensure multi-scale information is processed together at all levels**)
+- Vortex Pooling: Improving Context Representation in Semantic Segmentation [[Paper]](https://arxiv.org/abs/1804.06242)
+- [**DFN**] [CVPR 2018] Learning a Discriminative Feature Network for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1804.09337) (**Uses deep supervision and attempts to process the smooth and edge portions of the segments separately**)
+- Stacked U-Nets: A No-Frills Approach to Natural Image Segmentation [[Paper]](https://arxiv.org/abs/1804.10343)
+- [BMVC 2018] Pyramid Attention Network for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1805.10180)
+- [**G-FRNet**] [CVPR 2017] Gated Feedback Refinement Network for Coarse-to-Fine Dense Semantic Image Labeling [[Paper]](https://arxiv.org/abs/1806.11266) [[code]](https://github.com/mrochan/gfrnet)
+- [CVPR 2018] Context Contrasted Feature and Gated Multi-Scale Aggregation for Scene Segmentation [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/html/Ding_Context_Contrasted_Feature_CVPR_2018_paper.html)
+- [**DenseASPP**] [CVPR 2018] DenseASPP for Semantic Segmentation in Street Scenes [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/html/Yang_DenseASPP_for_Semantic_CVPR_2018_paper.html) [[code]](https://github.com/DeepMotionAIResearch/DenseASPP) (**Combines dense connections with atrous convolutions**)
+- [CVPR 2018] Dense Decoder Shortcut Connections for Single-Pass Semantic Segmentation [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/html/Bilinski_Dense_Decoder_Shortcut_CVPR_2018_paper.html) (**Use dense connections in the decoding stage for higher accuracy (previously only done during feature extraction / encoding)**)
+- Smoothed Dilated Convolutions for Improved Dense Prediction [[Paper]](https://arxiv.org/abs/1808.08931)
+- [**PSANet**] [ECCV 2018] PSANet: Point-wise Spatial Attention Network for Scene Parsing [[Paper]](http://openaccess.thecvf.com/content_ECCV_2018/html/Hengshuang_Zhao_PSANet_Point-wise_Spatial_ECCV_2018_paper.html) [[project]](https://hszhao.github.io/projects/psanet/) [[code]](https://github.com/hszhao/PSANet) [[slide]](https://docs.google.com/presentation/d/1_brKNBtv8nVu_jOwFRGwVkEPAq8B8hEngBSQuZCWaZA/edit?usp=sharing) (<font color=red>Attention Mechanism</font>)
+- [**OCNet**] OCNet: Object Context Network for Scene Parsing [[Paper]](https://arxiv.org/abs/1809.00916) [[code]](https://github.com/PkuRainBow/OCNet) (<font color=red>Attention Mechanism</font>)
+- [**DAN**] [CVPR 2019] Dual Attention Network for Scene Segmentation [[Paper]](https://arxiv.org/abs/1809.02983) [[code]](https://github.com/junfu1115/DANet) (<font color=red>Attention Mechanism</font>)
+- [**CCNet**] CCNet: Criss-Cross Attention for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1811.11721) [[code]](https://github.com/speedinghzl/CCNet) (<font color=red>Attention Mechanism</font>)
+- [**GloRe**] [CVPR 2019] Graph-Based Global Reasoning Networks [[Paper]](https://arxiv.org/abs/1811.12814) (<font color=red>Graph Convolution</font>)
+- [**TKCN**] Tree-structured Kronecker Convolutional Networks for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1812.04945) [[code]](https://github.com/wutianyiRosun/TKCN)
+- [**GCU**] Beyond Grids: Learning Graph Representations for Visual Recognition [[Paper]](https://papers.nips.cc/paper/8135-beyond-grids-learning-graph-representations-for-visual-recognition) (<font color=red>Graph Convolution</font>)
+
+## 2019
+- Auto-DeepLab: Hierarchical Neural Architecture Search for Semantic Image Segmentation[[Paper]](https://arxiv.org/abs/1901.02985)
+- Decoders Matter for Semantic Segmentation: Data-Dependent Decoding Enables Flexible Feature Aggregation [[Paper]](https://arxiv.org/abs/1903.02120)
+- [**CVPR 2019**] Structured Knowledge Distillation for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.04197)
+- [**CVPR 2019**] Knowledge Adaptation for Efficient Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.04688)
+- [**CVPR 2019**] A Cross-Season Correspondence Dataset for Robust Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.06916)
+- Efficient Smoothing of Dilated Convolutions for Image Segmentation [[Paper]](https://arxiv.org/abs/1903.07992) [[Code]](https://github.com/ThomasZiegler/Efficient-Smoothing-of-DilaBeyond GridsBeyond GridsBeyond GridsBeyondted-Convolutions)
+- [**FastFCN**]FastFCN：Rethinking Dilated Convolution in the Backbone for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1903.11816) [[Code]](https://github.com/wuhuikai/FastFCN)
+- [**GFF**]GFF: Gated Fully Fusion for Semantic Segmentation [[Paper]](https://arxiv.org/abs/1904.01803)
+- DADA: Depth-aware Domain Adaptation in Semantic Segmentation [[Paper]](https://arxiv.org/abs/1904.01886)
+- [**HRNetV2**]High-Resolution Representations for Labeling Pixels and Regions [[Paper]](https://arxiv.org/abs/1904.04514)
 
 # Real-Time Semantic Segmentation
 1. [**ENet**] ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation-2016  [[Paper]](https://arxiv.org/abs/1606.02147)
